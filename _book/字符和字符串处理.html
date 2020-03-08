@@ -1,0 +1,483 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>字符和字符串处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="数组以及切片.html" />
+    
+    
+    <link rel="prev" href="内建容器.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础知识.html">
+            
+                <a href="基础知识.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="变量.html">
+            
+                <a href="变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="程序结构.html">
+            
+                <a href="程序结构.html">
+            
+                    
+                    程序结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="函数function.html">
+            
+                <a href="函数function.html">
+            
+                    
+                    函数function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="指针.html">
+            
+                <a href="指针.html">
+            
+                    
+                    指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="内建容器.html">
+            
+                <a href="内建容器.html">
+            
+                    
+                    内建容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="字符和字符串处理.html">
+            
+                <a href="字符和字符串处理.html">
+            
+                    
+                    字符和字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="数组以及切片.html">
+            
+                <a href="数组以及切片.html">
+            
+                    
+                    数组以及切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="面向“对象”.html">
+            
+                <a href="面向“对象”.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="面向“对象”.html">
+            
+                <a href="面向“对象”.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="结构体和方法.html">
+            
+                <a href="结构体和方法.html">
+            
+                    
+                    结构体和方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="封装.html">
+            
+                <a href="封装.html">
+            
+                    
+                    封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="特别说明.html">
+            
+                <a href="特别说明.html">
+            
+                    
+                    特别说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >字符和字符串处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B57;&#x7B26;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;">&#x5B57;&#x7B26;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;</h1>
+<p>rune&#x7C7B;&#x578B;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;Go&#x8BED;&#x8A00;&#x4E2D;&#x7684;char&#xFF0C;&#x5360;4&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x4E3A;int32&#x522B;&#x540D;</p>
+<ul>
+<li><p>&#x4F7F;&#x7528;range&#x904D;&#x5386; <code>postion, rune</code>&#x5BF9;</p>
+<pre><code class="lang-Go">s := <span class="hljs-string">&quot;Yes&#x6211;&#x7231;&#x6155;&#x8BFE;&#x7F51;!&quot;</span> <span class="hljs-comment">// UTF-8</span>
+
+<span class="hljs-keyword">for</span> _, b := <span class="hljs-keyword">range</span> []<span class="hljs-keyword">byte</span>(s) {
+        fmt.Printf(<span class="hljs-string">&quot;%X &quot;</span>, b)
+}
+
+<span class="hljs-keyword">for</span> i, ch := <span class="hljs-keyword">range</span> s {     <span class="hljs-comment">// ch is a rune</span>
+        fmt.Printf(<span class="hljs-string">&quot;(%d %X) &quot;</span>, i, ch)
+        <span class="hljs-comment">// ch&#x8FD9;&#x91CC;&#x662F;int32,&#x5C31;&#x662F;rune&#xFF0C;&#x4E3A;4&#x5B57;&#x8282;&#xFF0C;&#x4F46;&#x662F;utf-8&#x7C7B;&#x578B;&#x5728;&#x8FD9;&#x91CC;&#x8F6C;&#x6210;&#x4E86;unicode2&#x5B57;&#x8282;&#x578B;&#x5B58;&#x50A8;</span>
+        <span class="hljs-comment">// &#x6240;&#x4EE5;4&#x5B57;&#x8282;&#x4E2D;&#x53EA;&#x5360;&#x4E86;&#x4E24;&#x4E2A;&#x5B57;&#x8282; (3 6211)</span>
+      <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x904D;&#x5386;&#x7684;&#x662F;&#x5355;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x4F46;&#x662F;&#x8FD4;&#x56DE;&#x7684;&#x662F;position rune&#x5BF9;&#xFF0C;&#x6240;&#x4EE5;&#x8DF3;&#x8FC7;&#x4E86;&#x4E2D;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x7684;&#x5355;&#x5B57;&#x8282;</span>
+    }
+<span class="hljs-comment">// &#x7ED3;&#x679C;</span>
+<span class="hljs-number">59</span>      <span class="hljs-number">65</span>       <span class="hljs-number">73</span>    E6 <span class="hljs-number">88</span> <span class="hljs-number">91</span>   E7 <span class="hljs-number">88</span> B1    E6 <span class="hljs-number">85</span> <span class="hljs-number">95</span>    E8 AF BE   E7 BD <span class="hljs-number">91</span>    <span class="hljs-number">21</span> 
+(<span class="hljs-number">0</span> <span class="hljs-number">59</span>) (<span class="hljs-number">1</span> <span class="hljs-number">65</span>) (<span class="hljs-number">2</span> <span class="hljs-number">73</span>)  (<span class="hljs-number">3</span> <span class="hljs-number">6211</span>)   (<span class="hljs-number">6</span> <span class="hljs-number">7231</span>)     (<span class="hljs-number">9</span> <span class="hljs-number">6155</span>)   (<span class="hljs-number">12</span> <span class="hljs-number">8</span>BFE)   (<span class="hljs-number">15</span> <span class="hljs-number">7</span>F51)  (<span class="hljs-number">18</span> <span class="hljs-number">21</span>)
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>utf8.RuneCountInString</code>&#x83B7;&#x5F97;&#x5B57;&#x7B26;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x56E0;&#x4E3A;&#x4F7F;&#x7528;len()&#x53EA;&#x80FD;&#x83B7;&#x5F97;&#x5B57;&#x8282;&#x6570;&#xFF08;&#x82F1;&#x6587;&#x5360;1&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x4E2D;&#x6587;3&#x4E2A;utf-8&#x7F16;&#x7801;&#x4E0B;&#xFF09;</p>
+<pre><code class="lang-Go">fmt.Println(<span class="hljs-string">&quot;len count&quot;</span>:<span class="hljs-built_in">len</span>(s))    <span class="hljs-comment">//19</span>
+
+fmt.Println(<span class="hljs-string">&quot;Rune count:&quot;</span>,
+        utf8.RuneCountInString(s))     <span class="hljs-comment">//9</span>
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>[]byte</code>&#x83B7;&#x5F97;&#x5B57;&#x8282;&#xFF0C;&#x4F7F;&#x7528;<code>[]rune</code>&#x4F1A;&#x83B7;&#x5F97;&#x5B57;&#x7B26;&#x5207;&#x7247;&#xFF0C; &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x7528;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5207;&#x7247;&#x8FDB;&#x884C;&#x5F3A;&#x5236;&#x8F6C;&#x6362;</p>
+<pre><code class="lang-Go">s := <span class="hljs-string">&quot;Yes&#x6211;&#x7231;&#x6155;&#x8BFE;&#x7F51;!&quot;</span> <span class="hljs-comment">// UTF-8</span>
+<span class="hljs-keyword">for</span> _, b := <span class="hljs-keyword">range</span> []<span class="hljs-keyword">byte</span>(s) {
+        fmt.Printf(<span class="hljs-string">&quot;%X &quot;</span>, b)
+}
+<span class="hljs-comment">//</span>
+<span class="hljs-number">59</span> <span class="hljs-number">65</span> <span class="hljs-number">73</span> E6 <span class="hljs-number">88</span> <span class="hljs-number">91</span> E7 <span class="hljs-number">88</span> B1 E6 <span class="hljs-number">85</span> <span class="hljs-number">95</span> E8 AF BE E7 BD <span class="hljs-number">91</span> <span class="hljs-number">21</span>
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>utf8.DecodeRune</code>&#x5C06;utf8&#x89E3;&#x7801;&#x4E3A;&#x56DB;&#x5B57;&#x8282;unicode&#xFF0C;&#x4F46;&#x662F;Unicode&#x4E2D;&#x6587;&#x7F16;&#x7801;&#x53EA;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x5B57;&#x8282;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;unicode/utf8&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> main() {
+    s := <span class="hljs-string">&quot;&#x6211;&quot;</span> <span class="hljs-comment">// UTF-8</span>
+    a := []<span class="hljs-keyword">byte</span>(s)
+    ch, size := utf8.DecodeRune(a)
+    fmt.Printf(<span class="hljs-string">&quot;%X, %d&quot;</span>,ch, size)
+}
+<span class="hljs-comment">// &#x7ED3;&#x679C;</span>
+<span class="hljs-number">6211</span>, <span class="hljs-number">3</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x5728;<code>strings.</code>&#x5305;&#x5185;</p>
+<ul>
+<li>Fieds Split Join</li>
+<li>Contains, Index</li>
+<li>ToLower ToUpper</li>
+<li>Trim TrimRight TrimLeft</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="内建容器.html" class="navigation navigation-prev " aria-label="Previous page: 内建容器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="数组以及切片.html" class="navigation navigation-next " aria-label="Next page: 数组以及切片">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"字符和字符串处理","level":"1.3.1","depth":2,"next":{"title":"数组以及切片","level":"1.3.2","depth":2,"path":"数组以及切片.md","ref":"数组以及切片.md","articles":[]},"previous":{"title":"内建容器","level":"1.3","depth":1,"path":"内建容器.md","ref":"内建容器.md","articles":[{"title":"字符和字符串处理","level":"1.3.1","depth":2,"path":"字符和字符串处理.md","ref":"字符和字符串处理.md","articles":[]},{"title":"数组以及切片","level":"1.3.2","depth":2,"path":"数组以及切片.md","ref":"数组以及切片.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"base":"https://github.com/zhaoda/webpack-handbook/edit/master/content","label":"编辑此页","multilingual":false},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"例：/images/qr.png","alipay":"http://blog.willin.wang/static/images/qr.png","title":"打赏","button":"打赏","alipayText":"默认值：支付宝捐赠","wechatText":"默认值：微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"azu","repo":"JavaScript-Plugin-Architecture","type":"star","size":"large"},{"user":"azu","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"字符和字符串处理.md","mtime":"2020-02-21T13:10:13.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-24T13:02:57.574Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

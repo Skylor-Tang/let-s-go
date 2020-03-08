@@ -1,0 +1,535 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>函数function · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="指针.html" />
+    
+    
+    <link rel="prev" href="程序结构.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础知识.html">
+            
+                <a href="基础知识.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="变量.html">
+            
+                <a href="变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="程序结构.html">
+            
+                <a href="程序结构.html">
+            
+                    
+                    程序结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="函数function.html">
+            
+                <a href="函数function.html">
+            
+                    
+                    函数function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="指针.html">
+            
+                <a href="指针.html">
+            
+                    
+                    指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="内建容器.html">
+            
+                <a href="内建容器.html">
+            
+                    
+                    内建容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="字符和字符串处理.html">
+            
+                <a href="字符和字符串处理.html">
+            
+                    
+                    字符和字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="数组以及切片.html">
+            
+                <a href="数组以及切片.html">
+            
+                    
+                    数组以及切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="面向“对象”.html">
+            
+                <a href="面向“对象”.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="面向“对象”.html">
+            
+                <a href="面向“对象”.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="结构体和方法.html">
+            
+                <a href="结构体和方法.html">
+            
+                    
+                    结构体和方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="封装.html">
+            
+                <a href="封装.html">
+            
+                    
+                    封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="特别说明.html">
+            
+                <a href="特别说明.html">
+            
+                    
+                    特别说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >函数function</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
+<p><code>func eval(a,b int, op string) int</code>&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x5F0F;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x51FD;&#x6570;&#x540D;&#x5728;&#x524D;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x5728;&#x540E;&#xFF0C;&#x7C7B;&#x578B;&#x662F;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x5F97;&#x7C7B;&#x578B;&#xFF0C;&#x82E5;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;">&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;</h2>
+<p>Go&#x8BED;&#x8A00;&#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;&#x3002;&#xFF08;Python&#x4E5F;&#x53EF;&#x4EE5;&#xFF09;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#xFF0C;&#x5982;<code>func eval(a,b int, op string) (i int)</code>&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x3002;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> div(a, b <span class="hljs-keyword">int</span>) (q, r <span class="hljs-keyword">int</span>) {
+    <span class="hljs-keyword">return</span> a / b, a % b
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x5199;&#x53C2;&#x6570;</p>
+<pre><code class="lang-Go"><span class="hljs-comment">// &#x4E0D;&#x5199;&#x8FD4;&#x56DE;&#x503C;&#x53C2;&#x6570;</span>
+<span class="hljs-keyword">func</span> div(a, b <span class="hljs-keyword">int</span>) (<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>) {
+    <span class="hljs-keyword">return</span> a / b, a % b
+}
+</code></pre>
+<p>&#x5176;&#x5B9E;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5373;&#x8FD9;&#x91CC;&#x7684;q&#xFF0C;r &#x6CA1;&#x6709;&#x592A;&#x5927;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x5BF9;&#x8C03;&#x7528;&#x8005;&#x800C;&#x8A00;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x53EA;&#x662F;&#x8D77;&#x5230;&#x4E86;&#x63D0;&#x793A;&#x4F5C;&#x7528;&#xFF0C;&#x4FBF;&#x6377;&#x7684;&#x5730;&#x65B9;&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x7F16;&#x8F91;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x5E2E;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x751F;&#x6210;&#x63A5;&#x53D7;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x53C2;&#x6570;q&#xFF0C;r&#x3002;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x53C2;&#x6570;&#x6709;&#x5927;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> div(a, b <span class="hljs-keyword">int</span>) (q, r <span class="hljs-keyword">int</span>) {
+    q = a / b
+  r = a % b
+  <span class="hljs-keyword">return</span>     <span class="hljs-comment">// &#x6B64;&#x65F6;&#x53EA;&#x8981;&#x76F4;&#x63A5;return&#x5373;&#x53EF;&#x8FD4;&#x56DE;&#x503C;</span>
+}
+</code></pre>
+<ul>
+<li>&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x53EA;&#x8981;&#x51FD;&#x6570;&#x4F53;&#x4E00;&#x957F;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x641E;&#x4E0D;&#x6E05;&#x8D4B;&#x503C;&#x60C5;&#x51B5;</li>
+<li>&#x4E14;&#x8FD4;&#x56DE;&#x503C;&#x53C2;&#x6570;&#x4E00;&#x5B9A;&#x8981;&#x5199;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x5EFA;&#x8BAE;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x5E26;&#x6765;&#x4FBF;&#x5229;&#x7684;&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x4EA7;&#x751F;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x4E2A;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6765;&#x63A5;&#x53D7;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x9519;&#xFF08;Go&#x4E0D;&#x50CF;Python&#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>[&#x4E0B;&#x6807;]</code>&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x53D6;&#x5F97;&#x503C;&#xFF0C;Python&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5143;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x6807;&#xFF09;&#xFF0C;&#x8FD9;&#x5C31;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4E0E;&#x8FD4;&#x56DE;&#x503C;&#x4E2A;&#x6570;&#x5339;&#x914D;&#x7684;&#x53C2;&#x6570;&#x53BB;&#x63A5;&#x53D7;&#xFF0C;&#x4F46;&#x662F;Go&#x4E25;&#x683C;&#x7684;&#x8BED;&#x6CD5;&#x8981;&#x6C42;<font color="red">&#x51FD;&#x6570;&#x5185;</font>&#x6240;&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5230;&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#xFF0C;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>_</code>&#x6765;&#x63A5;&#x53D7;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<pre><code class="lang-Go"><span class="hljs-comment">// &#x4F7F;&#x7528;_&#x6765;&#x63A5;&#x53D7;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x503C;</span>
+q, _ := div(a, b)
+</code></pre>
+<h2 id="&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x6B63;&#x5E38;&#x7528;&#x6CD5;">&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x6B63;&#x5E38;&#x7528;&#x6CD5;</h2>
+<p><font color="red">&#x6CE8;&#x610F;&#xFF1A;</font>&#x4E0D;&#x8981;&#x6EE5;&#x7528;&#x51FD;&#x6570;&#x7684;&#x591A;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4E00;&#x822C;&#x7684;&#x5E38;&#x7528;&#x6CD5;&#x662F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x6765;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;<code>error</code>&#x7684;&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x8FD4;&#x56DE;&#x7684;&#x9519;&#x8BEF;&#x503C;&#x3002;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> eval(a, b <span class="hljs-keyword">int</span>, op <span class="hljs-keyword">string</span>) (<span class="hljs-keyword">int</span>, error) {    <span class="hljs-comment">//  f&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x8FD9;&#x91CC;&#x7684;int&#x548C;error</span>
+    <span class="hljs-keyword">switch</span> op {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;+&quot;</span>:
+        <span class="hljs-keyword">return</span> a + b, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;-&quot;</span>:
+        <span class="hljs-keyword">return</span> a - b, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;*&quot;</span>:
+        <span class="hljs-keyword">return</span> a * b, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;/&quot;</span>:
+        q, _ := div(a, b)
+        <span class="hljs-keyword">return</span> q, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">default</span>:
+    <span class="hljs-comment">// &#x4E0D;&#x4F7F;&#x7528;&#x539F;&#x5148;&#x7684;panic()&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x4E2D;&#x65AD;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x91C7;&#x7528;fmt.Errorf()&#x6784;&#x9020;&#x5F02;&#x5E38;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>, fmt.Errorf(  
+            <span class="hljs-string">&quot;unsupported operation: %s&quot;</span>, op)
+    }
+}
+
+<span class="hljs-keyword">func</span> main(){
+  <span class="hljs-keyword">if</span> result, err := eval(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-string">&quot;x&quot;</span>); err != <span class="hljs-literal">nil</span> {
+        fmt.Println(<span class="hljs-string">&quot;Error:&quot;</span>, err)
+    } <span class="hljs-keyword">else</span> {
+        fmt.Println(result)
+    }
+}
+</code></pre>
+<h2 id="&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;">&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;</h2>
+<p>Go&#x8BED;&#x8A00;&#x662F;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF1A;&#x53C2;&#x6570;&#xFF0C;&#x53D8;&#x91CF;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x662F;&#x51FD;&#x6570;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> apply(op <span class="hljs-keyword">func</span>(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span>, a, b <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
+  <span class="hljs-comment">// &#x4E3A;&#x4E86;&#x83B7;&#x53D6;&#x51FD;&#x6570;&#x540D;</span>
+    p := reflect.ValueOf(op).Pointer()
+    opName := runtime.FuncForPC(p).Name()
+    fmt.Printf(<span class="hljs-string">&quot;Calling function %s with args &quot;</span>+
+        <span class="hljs-string">&quot;(%d, %d)\n&quot;</span>, opName, a, b)
+
+    <span class="hljs-keyword">return</span> op(a, b)
+}
+
+<span class="hljs-comment">// &#x56E0;&#x4E3A;&#x81EA;&#x5E26;&#x7684;math.Pow()&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x8981;&#x6C42;&#x662F;float64&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x91CD;&#x5199;</span>
+<span class="hljs-keyword">func</span> pow(a,b <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">int</span>(math.Pow(<span class="hljs-keyword">float64</span>(a), <span class="hljs-keyword">float64</span>(b)))
+}
+
+<span class="hljs-keyword">func</span> main(){
+  fmt.Println(apply(pow, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>))
+}
+
+<span class="hljs-comment">// &#x8FD0;&#x884C;&#x7ED3;&#x679C;</span>
+Calling function main.pow with args (<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+<span class="hljs-number">81</span>
+</code></pre>
+<p>&#x9664;&#x4E86;&#x4F20;&#x9012;&#x624B;&#x5199;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x533F;&#x540D;&#x51FD;&#x6570;(&#x4E3A;&#x7701;&#x7565;&#x4E86;&#x51FD;&#x6570;&#x540D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x9664;&#x4E86;&#x51FD;&#x6570;&#x540D;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E00;&#x4E2A;&#x4E0D;&#x80FD;&#x5C11;)</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> main(){
+  fmt.Println(apply(
+    <span class="hljs-keyword">func</span>(a <span class="hljs-keyword">int</span>,b <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">int</span>(math.Pow(
+        <span class="hljs-keyword">float64</span>(a), <span class="hljs-keyword">float64</span>(b)))
+    }, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>))
+}
+
+<span class="hljs-comment">// &#x8FD0;&#x884C;&#x7ED3;&#x679C;</span>
+Calling function main.main.func1 with args (<span class="hljs-number">3</span>, <span class="hljs-number">4</span>)    
+<span class="hljs-number">81</span>
+</code></pre>
+<p>&#x7B2C;&#x4E00;&#x4E2A;main&#x662F;&#x5305;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;main&#x662F;func main()&#x7684;&#xFF0C;&#x7531;&#x4E8E;&#x662F;&#x533F;&#x540D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E09;&#x4E2A;&#x662F;func1&#x3002;</p>
+<h2 id="&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x51FD;&#x6570;&#x7684;&#x7279;&#x6027;">&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x51FD;&#x6570;&#x7684;&#x7279;&#x6027;</h2>
+<p>&#x56E0;&#x4E3A;Go&#x7684;&#x8BED;&#x6CD5;&#x8F83;&#x4E3A;&#x7B80;&#x6D01;&#xFF0C;&#x4E00;&#x8D77;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x7279;&#x6027;&#x90FD;&#x4E0D;&#x5305;&#x542B;&#xFF0C;&#x5982;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x91CD;&#x8F7D;&#x7B49;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x652F;&#x6301;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x5217;&#x8868;</p>
+<pre><code class="lang-Go"><span class="hljs-keyword">func</span> sum(numbers ...<span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {     <span class="hljs-comment">// ...&#x4E3A;golang&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x6B64;&#x5904;&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x591A;&#x4E2A;int&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;</span>
+    s := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> numbers {
+        s += numbers[i]
+    }
+    <span class="hljs-keyword">return</span> s
+}
+</code></pre>
+<h2 id="&#x51FD;&#x6570;&#x8BED;&#x6CD5;&#x8981;&#x70B9;&#x56DE;&#x987E;">&#x51FD;&#x6570;&#x8BED;&#x6CD5;&#x8981;&#x70B9;&#x56DE;&#x987E;</h2>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x5199;&#x5728;&#x6700;&#x540E;</li>
+<li>&#x53EF;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;</li>
+<li>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</li>
+<li>&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="程序结构.html" class="navigation navigation-prev " aria-label="Previous page: 程序结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="指针.html" class="navigation navigation-next " aria-label="Next page: 指针">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函数function","level":"1.2.3","depth":2,"next":{"title":"指针","level":"1.2.4","depth":2,"path":"指针.md","ref":"指针.md","articles":[]},"previous":{"title":"程序结构","level":"1.2.2","depth":2,"path":"程序结构.md","ref":"程序结构.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"base":"https://github.com/zhaoda/webpack-handbook/edit/master/content","label":"编辑此页","multilingual":false},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"例：/images/qr.png","alipay":"http://blog.willin.wang/static/images/qr.png","title":"打赏","button":"打赏","alipayText":"默认值：支付宝捐赠","wechatText":"默认值：微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"azu","repo":"JavaScript-Plugin-Architecture","type":"star","size":"large"},{"user":"azu","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"函数function.md","mtime":"2020-02-17T06:47:51.760Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-24T13:02:57.574Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
